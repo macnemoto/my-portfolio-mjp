@@ -1,12 +1,11 @@
 import './App.css'
 import InfoItem from './components/InfoItem'
+import { MapPin, Phone, Mail} from 'lucide-react'
 function App() {
 
   const avatar = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/1.png"
   const name = "Marcos Pirela"
   const description = "Software Developer"
-  // const color1 = "#1E1E1F"
-  // const color2 = "#353535"
 
 
   return (
@@ -23,12 +22,13 @@ function App() {
             </div>
           </div>
         </div>
-        <hr className={`h-px bg-secondary-color border-spacing-1 my-0`}></hr>
+        <hr className={`h-px border-secondary-color border-spacing-1 my-3`}></hr>
         <div className='flex flex-col gap-4'>
-          <InfoItem title={'EMAIL'} value={'Marcosj465@gmail.com'} />
-          <InfoItem title={'PHONE'} value={'+58-422-012317'} />
-          <InfoItem title={'LOCATION'} value={'Venezuela, Caracas'} />
+          <InfoItem title={'EMAIL'} value={'Marcosj465@gmail.com'} icon={Mail} />
+          <InfoItem title={'PHONE'} value={'(+58) 422-237617'} icon={Phone} />
+          <InfoItem title={'LOCATION'} value={'Venezuela, Zulia'} icon={MapPin} />
         </div>
+        <hr className={`h-px border-secondary-color border-spacing-1 my-3`}></hr>
       </div>
     </>
   )
