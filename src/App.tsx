@@ -1,5 +1,6 @@
 import './App.css'
 import InfoItem from './components/InfoItem'
+import NetworksIcon from './components/NetworksIcon'
 import { MapPin, Phone, Mail} from 'lucide-react'
 function App() {
 
@@ -29,7 +30,11 @@ function App() {
           <InfoItem title={'LOCATION'} value={'Venezuela, Zulia'} icon={MapPin} />
         </div>
         <hr className={`h-px border-secondary-color border-spacing-1 my-3`}></hr>
+      <div>
+        <NetworksIcon icon={MapPin} href={'https://www.linkedin.com/in/marcos-pirela-dev/'} />
       </div>
+      </div>
+      
     </>
   )
 }
