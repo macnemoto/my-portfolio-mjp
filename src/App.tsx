@@ -1,7 +1,9 @@
 import './App.css'
 import InfoItem from './components/InfoItem'
 import NetworksIcon from './components/NetworksIcon'
-import { MapPin, Phone, Mail} from 'lucide-react'
+import { MapPin, Phone, Mail } from 'lucide-react'
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { MdOutgoingMail } from "react-icons/md";
 function App() {
 
   const avatar = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/1.png"
@@ -25,16 +27,17 @@ function App() {
         </div>
         <hr className={`h-px border-secondary-color border-spacing-1 my-3`}></hr>
         <div className='flex flex-col gap-4'>
-          <InfoItem title={'EMAIL'} value={'Marcosj465@gmail.com'} icon={Mail} />
-          <InfoItem title={'PHONE'} value={'(+58) 422-237617'} icon={Phone} />
+          <InfoItem title={'EMAIL'} value={'marcospirela215@gmail.com'} icon={Mail} />
+          <InfoItem title={'PHONE'} value={'(+58) 414-9600196'} icon={Phone} />
           <InfoItem title={'LOCATION'} value={'Venezuela, Zulia'} icon={MapPin} />
         </div>
         <hr className={`h-px border-secondary-color border-spacing-1 my-3`}></hr>
-      <div>
-        <NetworksIcon icon={MapPin} href={'https://www.linkedin.com/in/marcos-pirela-dev/'} />
+        <ul className='flex gap-3 justify-start items-center'>
+          <li> <NetworksIcon icon={FaLinkedin} href={'https://www.linkedin.com/in/marcos-pirela-dev/'} /></li>
+          <li> <NetworksIcon icon={FaGithub} href={'https://github.com/macnemoto'} /></li>
+          <li> <NetworksIcon icon={MdOutgoingMail} href={'mailto:Marcos%20Pirela%20<marcospirela215@gmail.com>?subject=Contacto desde el Portfolio'} size='text-3xl' /></li>
+        </ul>
       </div>
-      </div>
-      
     </>
   )
 }

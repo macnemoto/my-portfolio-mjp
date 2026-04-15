@@ -1,16 +1,17 @@
-import type { LucideIcon } from "lucide-react";
+import type { IconType } from "react-icons";
 
 interface NetworksIconProps {
     href: string;
-    icon: LucideIcon;
+    icon: IconType;
+    size?: string
 }
 
 
 
-function NetworksIcon( { href, icon: Icon}: NetworksIconProps) {
+function NetworksIcon( { href, size = "text-2xl", icon: Icon}: NetworksIconProps) {
     return (
         <div>
-            <a href={href}><Icon/></a>
+            <a  href={href} className={size}><Icon/></a>
         </div>
     );
 }
