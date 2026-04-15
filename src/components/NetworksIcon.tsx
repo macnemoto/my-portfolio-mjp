@@ -11,7 +11,7 @@ interface NetworksIconProps {
 function NetworksIcon( { href, size = "text-2xl", icon: Icon}: NetworksIconProps) {
     return (
         <div>
-            <a  href={href} className={size}><Icon/></a>
+            <a target="_blank" rel="noreferrer" href={href} className={size}><Icon/></a>
         </div>
     );
 }
