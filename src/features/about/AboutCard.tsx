@@ -2,6 +2,8 @@ import ServiceCard from "../../components/ServiceCard";
 import iconDev from '../../assets/icon-dev.svg'
 import iconDesign from '../../assets/icon-design.svg'
 import iconBackend from '../../assets/icon-backend.svg'
+import SkillsInfo from "../../components/SkillsInfo";
+
 
 
 function AboutCardt() {
@@ -17,6 +19,7 @@ function AboutCardt() {
             <ServiceCard title={"Web development"} description={"Desarrollo de sitios web de alta calidad a nivel profesional."} icon={iconDev} />
             <ServiceCard title={"UI/UX Design"} description={"El diseño más moderno y de alta calidad, realizado a nivel profesional."} icon={iconDesign} />
             <ServiceCard title={"Backend Development"} description={"Servicios de backend de alto rendimiento diseñados para la escalabilidad y una experiencia de usuario impecable."} icon={iconBackend} />
+            <SkillsInfo />
         </div>
     );
 }
