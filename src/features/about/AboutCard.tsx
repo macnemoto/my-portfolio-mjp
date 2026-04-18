@@ -8,7 +8,7 @@ import SkillsInfo from "../../components/SkillsInfo";
 
 function AboutCardt() {
     return (
-        <div className="bg-primary-color p-4 rounded-lg">
+        <div className="bg-primary-color p-4 rounded-lg mb-5">
             <h1 className="text-2xl font-bold">About Me</h1>
             <div className="bg-yellow-500 rounded-full h-1 w-20 mt-1 mb-3"></div>
             <p className="mb-5">Ingeniero de Sistemas y Desarrollador Web Full Stack con más de 2 años de experiencia
