@@ -8,10 +8,10 @@ export default {
     extend: {
       colors: {
         'primary-color': '#1E1E1F',
-        'secondary-color': '#353535'
+        'secondary-color': '#353535',
+      },
     },
   },
-},
   plugins: [],
 }
 
