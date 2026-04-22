@@ -1,8 +1,11 @@
 import { BookOpen } from "lucide-react";
+import type { ResumeCardItemProps } from "../types/resume.types";
 
-function ResumeCardItem() {
+
+function ResumeCardItem({ item }: ResumeCardItemProps) {
+
     return (
-        <div className="bg-primary-color p-4 rounded-lg relative">
+        <div className="bg-primary-color p-4 first:rounded-t-xl last:rounded-b-xl relative">
             <div className="w-[0.10rem] h-40 bg-slate-400 absolute left-[2.05rem] z-0">
             </div>
             <div className="w-3.5 h-3.5 bg-white rounded-full border-[3.5px] border-primary-color absolute left-[1.7rem] top-[6.3rem] z-20"></div>
@@ -14,9 +17,9 @@ function ResumeCardItem() {
             </section>
             <ul className="list-disc ml-8 z-10">
                 <li>
-                    <h2 className="font-bold mb-2 ml">Instituto Universitario Politécnico "Santiago Mariño"</h2>
-                    <p className="font-light">Título: Ingeniero en Sistemas</p>
-                    <p className="text-yellow-500 text-sm">2012 - 2018</p>
+                    <h2 className="font-bold mb-2 ml">{item.title}</h2>
+                    <p className="font-light">{item.description}</p>
+                    <p className="text-yellow-500 text-sm">{item.date}</p>
                 </li>
             </ul>
         </div>);
