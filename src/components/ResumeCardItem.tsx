@@ -6,21 +6,22 @@ function ResumeCardItem({ item }: ResumeCardItemProps) {
 
     return (
         <div className="bg-primary-color p-4 first:rounded-t-xl last:rounded-b-xl relative">
-            <div className="w-[0.10rem] h-40 bg-slate-400 absolute left-[2.05rem] z-0">
-            </div>
-            <div className="w-3.5 h-3.5 bg-white rounded-full border-[3.5px] border-primary-color absolute left-[1.7rem] top-[6.3rem] z-20"></div>
             <section className="flex flex-row items-center gap-5 mb-10">
                 <div className=" bg-secondary-color p-2 rounded-lg z-20">
                     <BookOpen />
                 </div>
-                <p className="text-2xl font-bold">Educacion</p>
+                <p className="text-2xl font-bold">{item.section}</p>
             </section>
-            <ul className="list-disc ml-8 z-10">
-                <li>
+            <ul className="ml-8">
+                <li className="relative pl-8 pb-10
+                       before:absolute before:-top-10 before:-left-3 before:top-2 before:-bottom-5 before:w-[2px] before:bg-zinc-100 
+                       last:before:hidden 
+                       after:absolute after:left-[-17px] after:top-2 after:h-[12px] after:w-[12px] after:rounded-full after:bg-yellow-500 after:ring-4 after:ring-[#111]">
                     <h2 className="font-bold mb-2 ml">{item.title}</h2>
                     <p className="font-light">{item.description}</p>
                     <p className="text-yellow-500 text-sm">{item.date}</p>
                 </li>
+                <li className="relative pl-8 pb-10 after:absolute after:left-[-17px] after:top-2 after:h-[12px] after:w-[12px] after:rounded-full after:bg-yellow-500 after:ring-4 after:ring-[#111]">hola mundo</li>
             </ul>
         </div>);
 }
