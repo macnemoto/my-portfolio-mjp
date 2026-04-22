@@ -1,9 +1,12 @@
 import ResumeCardItem from "../../components/ResumeCardItem";
+import resumeDataRaw  from "../../data/resumen.json"
 
 
 function ResumeCard() {
     return (<div>
-        <ResumeCardItem />
+        {resumeDataRaw.map((item) => (
+            <ResumeCardItem item={item} key={item.id}/>
+        ) )}
     </div>);
 }
 

@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Instituto Universitario Politécnico 'Santiago Mariño'",
+    "description": "Ingeniero en Sistemas",
+    "date": "2012 - 2018"
+  },
+  {
+    "id": 2,
+    "title": "Desarrollador Full Stack",
+    "description": "Freelance / Proyectos Personales",
+    "date": "2019 - 2026"
+  },
+  {
+    "id": 3,
+    "title": "Titel test",
+    "description": "Freelance / Proyectos Personales",
+    "date": "2025 - 20270"
+  }
+]
