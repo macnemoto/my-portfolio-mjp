@@ -1,0 +1,56 @@
+{
+  "Educación": [
+    {
+      "id": 1,
+      "institucion": "Instituto Universitario Politécnico 'Santiago Mariño",
+      "titulo": "Ingeniero en Sistemas",
+      "periodo": "2012 - 2018",
+      "ubicacion": "Zulia, Venezuela"
+    }
+  ],
+  "Experiencia": [
+    {
+      "id": 1,
+      "empresa": "Netmidas",
+      "pais": "Colombia",
+      "rol": "Web Developer Full Stack",
+      "periodo": "Nov 2023 - Ene 2024",
+      "tecnologias": ["React", "Next.js", "Tailwind CSS", "Strapi"],
+      "logros": [
+        "Optimización de la lógica de interfaz alineada con estándares."
+      ]
+    },
+    {
+      "id": 2,
+      "empresa": "Faindit App",
+      "pais": "Venezuela",
+      "rol": "Backend Developer",
+      "periodo": "1 año",
+      "tecnologias": ["Node.js", "Express", "AWS Lambda", "AWS S3", "MongoDB"],
+      "logros": [
+        "Desarrollo de lógica de negocio serverless con AWS Lambda.",
+        "Implementación de arquitectura MVC."
+      ]
+    },
+    {
+      "id": 3,
+      "empresa": "NftForWorld",
+      "pais": "Chile",
+      "rol": "Frontend Developer",
+      "periodo": "7 meses",
+      "tecnologias": ["Svelte", "Tailwind CSS", "Chart.js"],
+      "logros": ["Migración de WordPress a Svelte, mejorando velocidad."]
+    },
+    {
+      "id": 4,
+      "empresa": "Cencoter C.A",
+      "pais": "Venezuela",
+      "rol": "Full Stack Developer",
+      "periodo": "4 meses",
+      "tecnologias": ["Node.js", "Express", "Puppeteer"],
+      "logros": [
+        "Automatización de procesos reduciendo tiempos de horas a minutos."
+      ]
+    }
+  ]
+}

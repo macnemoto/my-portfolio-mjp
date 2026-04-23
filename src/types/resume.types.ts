@@ -15,3 +15,27 @@ export interface ResumeCardItemProps {
     item: Experience;
     isLast?: boolean;
 }
+
+
+export interface EducacionItem {
+    id: number;
+    institucion: string;
+    titulo: string;
+    periodo: string;
+    ubicacion: string;
+}
+
+export interface ExperienciaItem {
+    id?: number;
+    empresa?: string;
+    pais?: string;
+    rol?: string;
+    periodo?: string;
+    tecnologias?: string[];
+    logros?: string[];
+}
+
+export interface Curriculum {
+    Educacion: EducacionItem[];
+    Experiencia: ExperienciaItem[];
+}
