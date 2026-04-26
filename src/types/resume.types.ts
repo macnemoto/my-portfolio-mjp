@@ -1,3 +1,5 @@
+import type React from "react";
+
 export interface Experience {
     id: number;
     section: string;
@@ -26,11 +28,11 @@ export interface EducacionItem {
 }
 
 export interface ExperienciaItem {
-    id?: number;
-    empresa?: string;
+    id: number;
+    empresa: string;
     pais?: string;
     rol?: string;
-    periodo?: string;
+    periodo: string;
     tecnologias?: string[];
     logros?: string[];
 }
@@ -38,4 +40,16 @@ export interface ExperienciaItem {
 export interface Curriculum {
     Educacion: EducacionItem[];
     Experiencia: ExperienciaItem[];
+}
+
+export interface Props {
+    title: string;
+    items: ExperienciaItem[];
+    icon?: React.ReactNode;
+}
+
+export interface EducationProps {
+    items: EducacionItem[]
+    icon: React.ReactNode;
+    title: string;
 }
