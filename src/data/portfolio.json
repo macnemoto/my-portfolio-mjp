@@ -1,0 +1,28 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "image": "https://aakashrajbanshi.com.np/assets/projects/nagarikapp.png",
+      "title": "Nagarik App",
+      "type": "Applications"
+    },
+    {
+      "id": 2,
+      "image": "https://aakashrajbanshi.com.np/assets/projects/ifood.png",
+      "title": "ifood",
+      "type": "Applications"
+    },
+    {
+      "id": 3,
+      "image": "https://aakashrajbanshi.com.np/assets/projects/saara.png",
+      "title": "Saara",
+      "type": "Applications"
+    },
+    {
+      "id": 4,
+      "image": "https://aakashrajbanshi.com.np/assets/projects/sociair.png",
+      "title": "Sociair",
+      "type": "Applications"
+    }
+  ]
+}

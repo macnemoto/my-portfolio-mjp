@@ -11,7 +11,7 @@ const description = "Software Developer"
 
 function ProfileCard() {
     return (
-        <div className="bg-primary-color rounded-lg p-4 flex flex-col gap-1 mb-5">
+        <div className="bg-primary-color rounded-lg p-4 flex flex-col gap-1 mb-5 border border-zinc-800">
             <div className="bg-primary-color rounded-lg p-4 flex flex-row gap-5">
                 <div className="flex items-center justify-center h-24 bg-secondary-color rounded-lg">
                     <img className='w-20 h-20' src={avatar} alt="avatar" />

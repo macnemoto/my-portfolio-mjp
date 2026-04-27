@@ -9,7 +9,7 @@ function ResumeCard() {
     const title = Object.keys(ResumeDataRaw)
 
     return (
-        <div className="bg-primary-color p-4 first:rounded-t-xl last:rounded-b-xl relative">
+        <div className="bg-primary-color p-4 first:rounded-t-xl last:rounded-b-xl relative mb-5 border border-zinc-800 rounded-lg">
             <EducationCardItem items={ResumeDataRaw.Educación} title={title[0]} icon={<GraduationCap/>} />
             <ExperienceCardItem items={ResumeDataRaw.Experiencia} title={title[1]} icon={<BookOpen/>} />
         </div>

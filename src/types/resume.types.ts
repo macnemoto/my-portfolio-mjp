@@ -53,3 +53,14 @@ export interface EducationProps {
     icon: React.ReactNode;
     title: string;
 }
+
+export interface PortfoliCardItemProps {
+    id: number;
+    image: string;
+    title: string;
+    type: string;
+}
+
+export interface PortfolioProps {
+    projects: PortfoliCardItemProps[];
+}
