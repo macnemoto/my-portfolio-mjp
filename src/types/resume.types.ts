@@ -1,4 +1,7 @@
-import type React from "react";
+import type { FieldErrors, Path, UseFormRegister } from "react-hook-form"
+import type { ContactFormData } from "../types/form.schema"
+
+
 
 export interface Experience {
     id: number;
@@ -63,4 +66,11 @@ export interface PortfoliCardItemProps {
 
 export interface PortfolioProps {
     projects: PortfoliCardItemProps[];
+}
+
+export interface InputFormProps {
+    placeholder: string
+    name: Path<ContactFormData>
+    register: UseFormRegister<ContactFormData>
+    errors: FieldErrors<ContactFormData>
 }
