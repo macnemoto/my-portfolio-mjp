@@ -1,0 +1,20 @@
+{
+    "description": "Ingeniero de Sistemas y Desarrollador Web Full Stack con más de 2 años de experiencia creando aplicaciones escalables. Mi enfoque principal se centra en el ecosistema JavaScript/TypeScript, especializándome en el desarrollo frontend con React y Tailwind CSS, y backend con Node.js y Express.",
+    "services": [
+        {
+            "title": "Web development",
+            "description": "Desarrollo de sitios web de alta calidad a nivel profesional.",
+            "icon": "icon-dev"
+        },
+        {
+            "title": "UI/UX Design",
+            "description": "El diseño más moderno y de alta calidad, realizado a nivel profesional.",
+            "icon": "icon-design"
+        },
+        {
+            "title": "Backend Development",
+            "description": "Servicios de backend de alto rendimiento diseñados para la escalabilidad y una experiencia de usuario impecable.",
+            "icon": "icon-backend"
+        }
+    ]
+}

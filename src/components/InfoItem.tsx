@@ -6,18 +6,15 @@ interface InfoItemProps {
     icon: LucideIcon;
 }
 
-
-
 const InfoItem = ({ title, value, icon: Icon }: InfoItemProps) => {
-
     return (
-        <div className="flex flex-row gap-3 justify-start items-center pl-2 bg-secondary-color rounded-lg py-2 w-full max-w-sm">
-            <div className="bg-primary-color h-9 w-9 rounded-md flex items-center justify-center">
-                <Icon />
+        <div className="flex flex-row gap-3 items-center group">
+            <div className="bg-secondary-color h-9 w-9 rounded-lg flex items-center justify-center group-hover:bg-yellow-400/20 transition-colors">
+                <Icon className="w-4 h-4 text-zinc-400 group-hover:text-yellow-400 transition-colors" />
             </div>
-            <div className="text-start truncate">
-                <p className="text-primary-color font-bold">{title}</p>
-                <p className="truncate">{value}</p>
+            <div className="text-start truncate flex-1">
+                <p className="text-zinc-500 text-xs uppercase tracking-wider">{title}</p>
+                <p className="text-zinc-300 text-sm truncate">{value}</p>
             </div>
         </div>
     )

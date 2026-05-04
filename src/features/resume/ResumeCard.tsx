@@ -2,17 +2,47 @@ import ExperienceCardItem from "../../components/ExperienceCardItem";
 import ResumeDataRaw from "../../data/resumenRaw.json"
 import { BookOpen , GraduationCap } from "lucide-react";
 import EducationCardItem from "../../components/EducationCardItem"
-
-
+import AnimatedSection from "../../components/AnimatedSection";
 
 function ResumeCard() {
     const title = Object.keys(ResumeDataRaw)
 
     return (
-        <div className="bg-primary-color p-4 first:rounded-t-xl last:rounded-b-xl relative mb-5 border border-zinc-800 rounded-lg">
-            <EducationCardItem items={ResumeDataRaw.Educación} title={title[0]} icon={<GraduationCap/>} />
-            <ExperienceCardItem items={ResumeDataRaw.Experiencia} title={title[1]} icon={<BookOpen/>} />
-        </div>
+        <AnimatedSection delay={0.2}>
+            <div className="bg-primary-color rounded-2xl p-5 md:p-8 border border-zinc-800 shadow-xl">
+                {/* Section Header */}
+                <div className="flex items-center gap-4 mb-8">
+                    <div className="w-12 h-12 rounded-xl bg-yellow-400/10 flex items-center justify-center">
+                        <GraduationCap className="w-6 h-6 text-yellow-400" />
+                    </div>
+                    <div>
+                        <h2 className="text-2xl md:text-3xl font-bold text-white">{title[0]}</h2>
+                        <div className="h-1 w-16 bg-yellow-400 rounded-full mt-1"></div>
+                    </div>
+                </div>
+                
+                {/* Education */}
+                <div className="mb-10">
+                    <EducationCardItem items={ResumeDataRaw.Educación} title={title[0]} icon={<GraduationCap/>} />
+                </div>
+                
+                {/* Experience Header */}
+                <div className="flex items-center gap-4 mb-8">
+                    <div className="w-12 h-12 rounded-xl bg-yellow-400/10 flex items-center justify-center">
+                        <BookOpen className="w-6 h-6 text-yellow-400" />
+                    </div>
+                    <div>
+                        <h2 className="text-2xl md:text-3xl font-bold text-white">{title[1]}</h2>
+                        <div className="h-1 w-16 bg-yellow-400 rounded-full mt-1"></div>
+                    </div>
+                </div>
+                
+                {/* Experience */}
+                <div>
+                    <ExperienceCardItem items={ResumeDataRaw.Experiencia} title={title[1]} icon={<BookOpen/>} />
+                </div>
+            </div>
+        </AnimatedSection>
     );
 }
 

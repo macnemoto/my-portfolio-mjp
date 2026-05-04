@@ -2,27 +2,27 @@
   "projects": [
     {
       "id": 1,
-      "image": "https://aakashrajbanshi.com.np/assets/projects/nagarikapp.png",
-      "title": "Nagarik App",
-      "type": "Applications"
+      "image": "https://images.unsplash.com/photo-1578632767115-351597cf2477?w=800&h=600&fit=crop",
+      "title": "Anime Dashboard",
+      "type": "Web Application"
     },
     {
       "id": 2,
-      "image": "https://aakashrajbanshi.com.np/assets/projects/ifood.png",
-      "title": "ifood",
-      "type": "Applications"
+      "image": "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=800&h=600&fit=crop",
+      "title": "Manga Reader",
+      "type": "Mobile App"
     },
     {
       "id": 3,
-      "image": "https://aakashrajbanshi.com.np/assets/projects/saara.png",
-      "title": "Saara",
-      "type": "Applications"
+      "image": "https://images.unsplash.com/photo-1613376023733-0a73315d9b06?w=800&h=600&fit=crop",
+      "title": "Character Wiki",
+      "type": "API + Frontend"
     },
     {
       "id": 4,
-      "image": "https://aakashrajbanshi.com.np/assets/projects/sociair.png",
-      "title": "Sociair",
-      "type": "Applications"
+      "image": "https://images.unsplash.com/photo-1560972550-aba3450b27ec?w=800&h=600&fit=crop",
+      "title": "Streaming Platform",
+      "type": "Full Stack"
     }
   ]
 }

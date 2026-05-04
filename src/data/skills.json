@@ -1,0 +1,14 @@
+{
+    "skills": [
+        { "name": "html5", "style": "plain-wordmark", "isColored": true },
+        { "name": "css3", "style": "plain-wordmark", "isColored": true },
+        { "name": "javascript", "style": "plain", "isColored": true },
+        { "name": "react", "style": "original-wordmark", "isColored": true },
+        { "name": "tailwindcss", "style": "original", "isColored": true },
+        { "name": "nodejs", "style": "plain-wordmark", "isColored": true },
+        { "name": "express", "style": "original-wordmark", "isColored": false },
+        { "name": "mongodb", "style": "plain-wordmark", "isColored": true },
+        { "name": "git", "style": "plain-wordmark", "isColored": true },
+        { "name": "python", "style": "plain-wordmark", "isColored": true }
+    ]
+}
