@@ -42,9 +42,9 @@ export function ToastProvider({ children }: { children: ReactNode }) {
 
     const getStyles = (type: ToastType) => {
         switch (type) {
-            case 'success': return 'border-green-500 bg-green-500/10';
-            case 'error': return 'border-red-500 bg-red-500/10';
-            case 'info': return 'border-blue-500 bg-blue-500/10';
+            case 'success': return 'border-emerald-500 bg-emerald-500/10 text-emerald-600 dark:text-emerald-400';
+            case 'error': return 'border-red-500 bg-red-500/10 text-red-600 dark:text-red-400';
+            case 'info': return 'border-blue-500 bg-blue-500/10 text-blue-600 dark:text-blue-400';
         }
     };
 

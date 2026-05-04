@@ -23,25 +23,25 @@ function AboutCard() {
 
     return (
         <AnimatedSection delay={0.1}>
-            <div className="bg-primary-color rounded-2xl p-5 md:p-8 border border-zinc-800 shadow-xl">
+            <div className="bg-card rounded-xl p-5 md:p-7 border border-primary shadow-card transition-colors duration-400">
                 {/* Section Header */}
                 <div className="flex items-center gap-4 mb-6">
-                    <div className="w-12 h-12 rounded-xl bg-yellow-400/10 flex items-center justify-center">
-                        <span className="text-yellow-400 text-xl">👋</span>
+                    <div className="w-12 h-12 rounded-xl accent-muted flex items-center justify-center">
+                        <span className="text-2xl">👋</span>
                     </div>
                     <div>
-                        <h1 className="text-2xl md:text-3xl font-bold text-white">About Me</h1>
-                        <div className="h-1 w-16 bg-yellow-400 rounded-full mt-1"></div>
+                        <h1 className="text-2xl md:text-3xl font-bold text-primary">About Me</h1>
+                        <div className="h-1 w-16 bg-accent rounded-full mt-1"></div>
                     </div>
                 </div>
                 
                 {/* Description */}
-                <p className="mb-8 text-sm md:text-base text-zinc-300 leading-relaxed max-w-3xl">{aboutData.description}</p>
+                <p className="mb-8 text-sm md:text-base text-secondary leading-relaxed max-w-3xl">{aboutData.description}</p>
                 
                 {/* Services Grid */}
                 <div className="mb-8">
-                    <h2 className="text-lg font-semibold text-white mb-4 flex items-center gap-2">
-                        <span className="w-1.5 h-6 bg-yellow-400 rounded-full"></span>
+                    <h2 className="text-lg font-semibold text-primary mb-4 flex items-center gap-2">
+                        <span className="w-1.5 h-6 bg-accent rounded-full"></span>
                         What I Do
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
@@ -57,7 +57,7 @@ function AboutCard() {
                 </div>
                 
                 {/* Skills */}
-                <div className="border-t border-zinc-700/50 pt-6">
+                <div className="border-t border-secondary pt-6">
                     <SkillsInfo />
                 </div>
             </div>

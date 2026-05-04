@@ -39,12 +39,12 @@ function App() {
   return (
     <ThemeProvider>
       <ToastProvider>
-        <div className="min-h-screen bg-[#1a1a1b] transition-colors duration-300">
-          {/* Header Navigation - Tablet & Desktop */}
-          <header className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${isScrolled ? 'bg-[#1a1a1b]/95 backdrop-blur-md shadow-lg border-b border-zinc-800/50' : 'bg-transparent'}`}>
+        <div className="min-h-screen bg-body transition-colors duration-400">
+          {/* Header */}
+          <header className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${isScrolled ? 'bg-overlay backdrop-blur-xl shadow-lg border-b border-primary' : 'bg-transparent'}`}>
             <nav className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-              <div className="text-lg font-bold text-white tracking-tight">
-                <span className="text-yellow-400">M</span>P
+              <div className="text-lg font-bold tracking-tight">
+                <span className="text-accent">M</span><span className="text-primary">P</span>
               </div>
               
               <ul className="hidden md:flex gap-1">
@@ -54,8 +54,8 @@ function App() {
                       onClick={() => scrollToSection(item.id)}
                       className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
                         activeSection === item.id
-                          ? 'bg-yellow-400/20 text-yellow-400'
-                          : 'text-zinc-400 hover:text-white hover:bg-zinc-800'
+                          ? 'accent-muted text-accent'
+                          : 'text-secondary hover:text-primary hover:bg-surface'
                       }`}
                       aria-current={activeSection === item.id ? 'page' : undefined}
                     >
@@ -71,33 +71,32 @@ function App() {
 
           {/* Main Content */}
           <div className="pt-20 max-w-7xl mx-auto px-4 pb-12">
-            {/* Desktop Layout: Sidebar + Content */}
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
               
-              {/* Sidebar - Desktop Only */}
+              {/* Sidebar - Desktop */}
               <aside className="hidden lg:block lg:col-span-4 xl:col-span-3">
                 <div className="sticky top-24">
                   <ProfileCard />
                   
                   {/* Quick Stats */}
-                  <div className="mt-6 bg-primary-color rounded-lg p-6 border border-zinc-800">
-                    <h3 className="text-sm font-semibold text-zinc-400 uppercase tracking-wider mb-4">Quick Stats</h3>
+                  <div className="mt-6 bg-card rounded-xl p-5 border border-primary shadow-card transition-colors duration-400">
+                    <h3 className="text-xs font-semibold text-tertiary uppercase tracking-wider mb-4">Quick Stats</h3>
                     <div className="grid grid-cols-2 gap-4">
                       <div className="text-center">
-                        <div className="text-2xl font-bold text-yellow-400">2+</div>
-                        <div className="text-xs text-zinc-500">Years Exp.</div>
+                        <div className="text-2xl font-bold text-accent">2+</div>
+                        <div className="text-xs text-tertiary">Years Exp.</div>
                       </div>
                       <div className="text-center">
-                        <div className="text-2xl font-bold text-yellow-400">10+</div>
-                        <div className="text-xs text-zinc-500">Projects</div>
+                        <div className="text-2xl font-bold text-accent">10+</div>
+                        <div className="text-xs text-tertiary">Projects</div>
                       </div>
                       <div className="text-center">
-                        <div className="text-2xl font-bold text-yellow-400">5+</div>
-                        <div className="text-xs text-zinc-500">Technologies</div>
+                        <div className="text-2xl font-bold text-accent">5+</div>
+                        <div className="text-xs text-tertiary">Technologies</div>
                       </div>
                       <div className="text-center">
-                        <div className="text-2xl font-bold text-yellow-400">100%</div>
-                        <div className="text-xs text-zinc-500">Commitment</div>
+                        <div className="text-2xl font-bold text-accent">100%</div>
+                        <div className="text-xs text-tertiary">Commitment</div>
                       </div>
                     </div>
                   </div>
@@ -121,8 +120,8 @@ function App() {
                         onClick={() => scrollToSection(item.id)}
                         className={`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all duration-200 flex-shrink-0 ${
                           activeSection === item.id
-                            ? 'bg-yellow-400 text-zinc-900'
-                            : 'bg-zinc-800/50 text-zinc-400 hover:bg-zinc-800'
+                            ? 'bg-accent text-bg-card font-semibold'
+                            : 'bg-surface text-secondary hover:bg-surface-hover'
                         }`}
                       >
                         {item.label}
@@ -133,29 +132,18 @@ function App() {
 
                 {/* Content Sections */}
                 <div className="space-y-6">
-                  <div id="about">
-                    <AboutCard />
-                  </div>
-                  
-                  <div id="resume">
-                    <ResumeCard />
-                  </div>
-                  
-                  <div id="portfolio">
-                    <PortfolioCard />
-                  </div>
-                  
-                  <div id="contact">
-                    <FormCard />
-                  </div>
+                  <div id="about"><AboutCard /></div>
+                  <div id="resume"><ResumeCard /></div>
+                  <div id="portfolio"><PortfolioCard /></div>
+                  <div id="contact"><FormCard /></div>
                 </div>
               </main>
             </div>
           </div>
 
           {/* Footer */}
-          <footer className="border-t border-zinc-800 py-6 text-center">
-            <p className="text-zinc-500 text-sm">
+          <footer className="border-t border-primary py-6 text-center">
+            <p className="text-tertiary text-sm">
               © {new Date().getFullYear()} Marcos Pirela. Built with React & Tailwind CSS.
             </p>
           </footer>

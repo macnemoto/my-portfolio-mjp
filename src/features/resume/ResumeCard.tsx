@@ -9,15 +9,15 @@ function ResumeCard() {
 
     return (
         <AnimatedSection delay={0.2}>
-            <div className="bg-primary-color rounded-2xl p-5 md:p-8 border border-zinc-800 shadow-xl">
-                {/* Section Header */}
-                <div className="flex items-center gap-4 mb-8">
-                    <div className="w-12 h-12 rounded-xl bg-yellow-400/10 flex items-center justify-center">
-                        <GraduationCap className="w-6 h-6 text-yellow-400" />
+            <div className="bg-card rounded-xl p-5 md:p-7 border border-primary shadow-card transition-colors duration-400">
+                {/* Education Header */}
+                <div className="flex items-center gap-4 mb-6">
+                    <div className="w-12 h-12 rounded-xl accent-muted flex items-center justify-center">
+                        <GraduationCap className="w-6 h-6 text-accent" />
                     </div>
                     <div>
-                        <h2 className="text-2xl md:text-3xl font-bold text-white">{title[0]}</h2>
-                        <div className="h-1 w-16 bg-yellow-400 rounded-full mt-1"></div>
+                        <h2 className="text-2xl md:text-3xl font-bold text-primary">{title[0]}</h2>
+                        <div className="h-1 w-16 bg-accent rounded-full mt-1"></div>
                     </div>
                 </div>
                 
@@ -27,13 +27,13 @@ function ResumeCard() {
                 </div>
                 
                 {/* Experience Header */}
-                <div className="flex items-center gap-4 mb-8">
-                    <div className="w-12 h-12 rounded-xl bg-yellow-400/10 flex items-center justify-center">
-                        <BookOpen className="w-6 h-6 text-yellow-400" />
+                <div className="flex items-center gap-4 mb-6">
+                    <div className="w-12 h-12 rounded-xl accent-muted flex items-center justify-center">
+                        <BookOpen className="w-6 h-6 text-accent" />
                     </div>
                     <div>
-                        <h2 className="text-2xl md:text-3xl font-bold text-white">{title[1]}</h2>
-                        <div className="h-1 w-16 bg-yellow-400 rounded-full mt-1"></div>
+                        <h2 className="text-2xl md:text-3xl font-bold text-primary">{title[1]}</h2>
+                        <div className="h-1 w-16 bg-accent rounded-full mt-1"></div>
                     </div>
                 </div>
                 

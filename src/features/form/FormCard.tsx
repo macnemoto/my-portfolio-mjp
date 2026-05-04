@@ -39,16 +39,16 @@ function FormCard() {
 
     return (
         <AnimatedSection delay={0.4}>
-            <div className="bg-primary-color rounded-2xl p-5 md:p-8 border border-zinc-800 shadow-xl">
+            <div className="bg-card rounded-xl p-5 md:p-7 border border-primary shadow-card transition-colors duration-400">
                 {/* Section Header */}
-                <div className="flex items-center gap-4 mb-8">
-                    <div className="w-12 h-12 rounded-xl bg-yellow-400/10 flex items-center justify-center">
-                        <Mail className="w-6 h-6 text-yellow-400" />
+                <div className="flex items-center gap-4 mb-6">
+                    <div className="w-12 h-12 rounded-xl accent-muted flex items-center justify-center">
+                        <Mail className="w-6 h-6 text-accent" />
                     </div>
                     <div>
-                        <h2 className="text-2xl md:text-3xl font-bold text-white">Get In Touch</h2>
-                        <p className="text-zinc-400 text-sm mt-1">Have a project in mind? Let's talk</p>
-                        <div className="h-1 w-16 bg-yellow-400 rounded-full mt-2"></div>
+                        <h2 className="text-2xl md:text-3xl font-bold text-primary">Get In Touch</h2>
+                        <p className="text-secondary text-sm mt-1">Have a project in mind? Let's talk</p>
+                        <div className="h-1 w-16 bg-accent rounded-full mt-2"></div>
                     </div>
                 </div>
                 
@@ -56,27 +56,27 @@ function FormCard() {
                 <form className="space-y-5" onSubmit={handleSubmit(handleSubmitForm)}>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                         <div>
-                            <label htmlFor="fullName" className="block text-sm font-medium text-zinc-400 mb-2">Full Name</label>
+                            <label htmlFor="fullName" className="block text-sm font-medium text-secondary mb-2">Full Name</label>
                             <InputForm placeholder={"John Doe"} errors={errors} name={"fullName"} register={register} />
                         </div>
                         <div>
-                            <label htmlFor="email" className="block text-sm font-medium text-zinc-400 mb-2">Email</label>
+                            <label htmlFor="email" className="block text-sm font-medium text-secondary mb-2">Email</label>
                             <InputForm placeholder={"john@example.com"} errors={errors} name={"email"} register={register} />
                         </div>
                     </div>
                     
                     <div>
-                        <label htmlFor="subject" className="block text-sm font-medium text-zinc-400 mb-2">Subject</label>
+                        <label htmlFor="subject" className="block text-sm font-medium text-secondary mb-2">Subject</label>
                         <InputForm placeholder={"Project collaboration"} errors={errors} name={"subject"} register={register} />
                     </div>
                     
                     <div>
-                        <label htmlFor="message" className="block text-sm font-medium text-zinc-400 mb-2">Message</label>
+                        <label htmlFor="message" className="block text-sm font-medium text-secondary mb-2">Message</label>
                         <TextArea placeholder={"Tell me about your project..."} errors={errors} name={"message"} register={register} size="" />
                     </div>
                     
                     <button 
-                        className="w-full bg-yellow-400 hover:bg-yellow-500 text-zinc-900 font-semibold py-3 px-6 rounded-xl flex items-center justify-center gap-2 transition-all duration-200 hover:shadow-lg hover:shadow-yellow-400/20 disabled:opacity-50 disabled:cursor-not-allowed"
+                        className="w-full bg-accent hover:bg-accent-hover text-bg-card font-semibold py-3 px-6 rounded-xl flex items-center justify-center gap-2 transition-all duration-200 hover:shadow-glow disabled:opacity-50 disabled:cursor-not-allowed"
                         type="submit"
                         disabled={isSubmitting}
                     >

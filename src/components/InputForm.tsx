@@ -10,7 +10,7 @@ function InputForm({ placeholder, name, register, errors }: InputFormProps) {
             <label htmlFor={inputId} className="sr-only">{placeholder}</label>
             <input
                 id={inputId}
-                className="bg-primary-color w-full px-4 py-2 rounded-lg border border-[#75756D] focus:border-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-400/30 text-[#75756D] placeholder-[#75756D] disabled:opacity-50"
+                className="bg-input w-full px-4 py-2.5 rounded-lg border border-input focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20 text-primary placeholder:text-tertiary disabled:opacity-50 transition-all duration-200"
                 {...register(name)}
                 placeholder={placeholder}
                 aria-invalid={!!error}

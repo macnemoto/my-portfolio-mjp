@@ -6,13 +6,13 @@ interface NetworksIconProps {
     size?: string
 }
 
-function NetworksIcon( { href, size = "text-2xl", icon: Icon}: NetworksIconProps) {
+function NetworksIcon( { href, size = "text-xl", icon: Icon}: NetworksIconProps) {
     return (
         <a 
             target="_blank" 
             rel="noreferrer" 
             href={href} 
-            className={`${size} text-zinc-400 hover:text-yellow-400 transition-all duration-200 hover:-translate-y-1 inline-block p-2 rounded-lg hover:bg-secondary-color`}
+            className={`${size} text-tertiary hover:text-accent transition-all duration-200 hover:-translate-y-1 inline-block p-2 rounded-lg hover:bg-surface`}
             aria-label={href.includes('linkedin') ? 'LinkedIn Profile' : href.includes('github') ? 'GitHub Profile' : 'Send Email'}
         >
             <Icon/>

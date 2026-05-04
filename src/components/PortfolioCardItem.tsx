@@ -6,7 +6,7 @@ function PortfolioCardItem({ projects }: PortfolioProps) {
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {projects.map((project) => (
-                <article key={project.id} className="group bg-secondary-color/30 rounded-xl overflow-hidden border border-zinc-700/30 hover:border-yellow-400/30 transition-all duration-300 hover:shadow-lg hover:shadow-yellow-400/5 hover:-translate-y-1">
+                <article key={project.id} className="group bg-surface/60 rounded-xl overflow-hidden border border-secondary hover:border-accent/50 transition-all duration-300 hover:shadow-glow hover:-translate-y-1">
                     {/* Image */}
                     <div className="relative overflow-hidden">
                         <img 
@@ -16,11 +16,11 @@ function PortfolioCardItem({ projects }: PortfolioProps) {
                             loading="lazy"
                         />
                         {/* Overlay */}
-                        <div className="absolute inset-0 bg-gradient-to-t from-primary-color via-transparent to-transparent opacity-60"></div>
+                        <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent opacity-60"></div>
                         
                         {/* Type Badge */}
                         <div className="absolute top-3 right-3">
-                            <span className="bg-yellow-400/90 text-zinc-900 text-xs font-semibold px-3 py-1 rounded-full">
+                            <span className="bg-accent/90 text-bg-card text-xs font-semibold px-3 py-1 rounded-full">
                                 {project.type}
                             </span>
                         </div>
@@ -28,18 +28,18 @@ function PortfolioCardItem({ projects }: PortfolioProps) {
                     
                     {/* Content */}
                     <div className="p-4">
-                        <h3 className="font-bold text-white text-lg mb-1 group-hover:text-yellow-400 transition-colors">
+                        <h3 className="font-bold text-primary text-lg mb-1 group-hover:text-accent transition-colors">
                             {project.title}
                         </h3>
-                        <p className="text-zinc-400 text-sm">{project.type}</p>
+                        <p className="text-secondary text-sm">{project.type}</p>
                         
                         {/* Actions */}
                         <div className="mt-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0">
-                            <button className="flex-1 bg-yellow-400/20 hover:bg-yellow-400/30 text-yellow-400 py-2 px-3 rounded-lg text-sm font-medium flex items-center justify-center gap-1.5 transition-colors">
+                            <button className="flex-1 accent-muted hover:accent-muted-hover text-accent py-2 px-3 rounded-lg text-sm font-medium flex items-center justify-center gap-1.5 transition-colors">
                                 <ExternalLink className="w-4 h-4" />
                                 Live Demo
                             </button>
-                            <button className="flex-1 bg-zinc-700/50 hover:bg-zinc-700 text-zinc-300 py-2 px-3 rounded-lg text-sm font-medium flex items-center justify-center gap-1.5 transition-colors">
+                            <button className="flex-1 bg-surface hover:bg-surface-hover text-secondary py-2 px-3 rounded-lg text-sm font-medium flex items-center justify-center gap-1.5 transition-colors border border-secondary">
                                 <FaGithub className="w-4 h-4" />
                                 Code
                             </button>
