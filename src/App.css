@@ -9,3 +9,10 @@ body {
   font-variation-settings:
     "wdth" 100;
 }
+
+#root > section.bg-primary-color.p-5.border.border-zinc-800.rounded-lg.text-\[\#75756D\] > form > div > span {
+  display: block;
+  color: red;
+  margin-top: 1rem;
+  font-weight: 700;
+}

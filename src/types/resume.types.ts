@@ -74,3 +74,11 @@ export interface InputFormProps {
     register: UseFormRegister<ContactFormData>
     errors: FieldErrors<ContactFormData>
 }
+
+export interface TextAreaProps {
+    placeholder: string
+    name: Path<ContactFormData>
+    register: UseFormRegister<ContactFormData>
+    errors: FieldErrors<ContactFormData>
+    size?: string
+}
