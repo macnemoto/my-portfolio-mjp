@@ -11,13 +11,13 @@ function App() {
 
   return (
     <>
-      <div className='flex flex-col mx-auto max-w-7xl'>
+      <section className='flex flex-col mx-auto max-w-7xl'>
         <ProfileCard />
         <AboutCard />
         <ResumeCard />
         <PortfolioCard />
         <FormCard />
-      </div>
+      </section>
     </>
   )
 }
