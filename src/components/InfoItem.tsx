@@ -17,7 +17,7 @@ const InfoItem = ({ title, value, icon: Icon }: InfoItemProps) => {
             </div>
             <div className="text-start truncate">
                 <p className="text-[#6E716D]">{title}</p>
-                <p className="text-[#A1A19D] truncate font-light">{value}</p>
+                <p className="text-[#b6b6b0] truncate font-light">{value}</p>
             </div>
         </div>
     )
