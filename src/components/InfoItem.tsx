@@ -11,13 +11,13 @@ interface InfoItemProps {
 const InfoItem = ({ title, value, icon: Icon }: InfoItemProps) => {
 
     return (
-        <div className="flex flex-row gap-3 justify-start items-center pl-2 bg-secondary-color rounded-lg py-2 w-full max-w-sm">
-            <div className="bg-primary-color h-9 w-9 rounded-md flex items-center justify-center">
-                <Icon />
+        <div className="flex flex-row gap-3 justify-start items-center rounded-lg w-full max-w-sm">
+            <div className="bg-secondary-color h-10 w-10 rounded-md flex items-center justify-center">
+                <Icon className="text-[#6E716D]" size={15} />
             </div>
             <div className="text-start truncate">
-                <p className="text-primary-color font-bold">{title}</p>
-                <p className="truncate">{value}</p>
+                <p className="text-[#6E716D]">{title}</p>
+                <p className="text-[#A1A19D] truncate font-light">{value}</p>
             </div>
         </div>
     )
