@@ -30,7 +30,7 @@ function ProfileCard() {
                 <InfoItem title={'LOCATION'} value={'Venezuela, Zulia'} icon={MapPin} />
             </div>
             <hr className={`h-px border-secondary-color border-spacing-1 my-3`}></hr>
-            <ul className='flex justify-center md:justify-start items-center gap-1'>
+            <ul className='flex justify-center md:justify-start items-center gap-1 text-[#B6B3AB]'>
                 <li className='p-2'> <NetworksIcon icon={FaLinkedin} href={'https://www.linkedin.com/in/marcos-pirela-dev/'} /></li>
                 <li className='p-2'> <NetworksIcon icon={FaGithub} href={'https://github.com/macnemoto'} /></li>
                 <li className='p-2'> <NetworksIcon icon={MdOutgoingMail} href={'mailto:Marcos%20Pirela%20<marcospirela215@gmail.com>?subject=Contacto desde el Portfolio'} size='text-3xl' /></li>
