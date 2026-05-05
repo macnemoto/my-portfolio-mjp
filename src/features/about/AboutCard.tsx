@@ -16,9 +16,11 @@ function AboutCardt() {
                 JavaScript/TypeScript, especializándome en el desarrollo frontend con React y Tailwind
                 CSS, y backend con Node.js y Express.
             </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             <ServiceCard title={"Web development"} description={"Desarrollo de sitios web de alta calidad a nivel profesional."} icon={iconDev} />
             <ServiceCard title={"UI/UX Design"} description={"El diseño más moderno y de alta calidad, realizado a nivel profesional."} icon={iconDesign} />
             <ServiceCard title={"Backend Development"} description={"Servicios de backend de alto rendimiento diseñados para la escalabilidad y una experiencia de usuario impecable."} icon={iconBackend} />
+            </div>
             <SkillsInfo />
         </div>
     );

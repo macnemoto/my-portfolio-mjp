@@ -17,7 +17,7 @@ function SkillsInfo() {
 
     return (
         <div>
-            <h1 className="font-bold text-2xl mb-7">Habilidades</h1>
+            <h1 className="font-bold text-2xl my-7">Habilidades</h1>
             <ul className="flex flex-row gap-5 overflow-x-auto my-2">
                 {skills.map((skill, index) => (
                     <li key={index} className="bg-[#242938] p-5 rounded-lg"><i className={`devicon-${skill.name}-${skill.style} ${skill.isColored ? 'colored' : ''} text-7xl`}></i></li>

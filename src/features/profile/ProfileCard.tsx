@@ -11,8 +11,8 @@ const description = "Software Developer"
 
 function ProfileCard() {
     return (
-        <div className="bg-primary-color rounded-lg p-4 flex flex-col gap-1 mb-5 border border-zinc-800">
-            <div className="bg-primary-color rounded-lg p-4 flex flex-col justify-center items-center md:justify-start gap-5 md:flex-row">
+        <div className="bg-primary-color rounded-lg p-4 gap-1 mb-5 border border-zinc-800">
+            <div className="bg-primary-color rounded-lg py-4 flex flex-col justify-center items-center md:justify-start gap-5 md:flex-row">
                 <div className="flex items-center justify-center h-24 w-24 md:h-28 md:w-28 bg-secondary-color rounded-lg">
                     <img className='w-20 h-20' src={avatar} alt="avatar" />
                 </div>
@@ -23,14 +23,14 @@ function ProfileCard() {
                     </div>
                 </div>
             </div>
-            <hr className={`h-px border-secondary-color border-spacing-1 my-3`}></hr>
+            <hr className={`h-1px border-secondary-color border-spacing-1 my-3`}></hr>
             <div className='flex flex-col gap-2'>
                 <InfoItem title={'EMAIL'} value={'marcospirela215@gmail.com'} icon={Mail} />
                 <InfoItem title={'PHONE'} value={'(+58) 414-9600196'} icon={Phone} />
                 <InfoItem title={'LOCATION'} value={'Venezuela, Zulia'} icon={MapPin} />
             </div>
-            <hr className={`h-px border-secondary-color border-spacing-1 my-3`}></hr>
-            <ul className='flex justify-center md:justify-start items-center gap-1'>
+            <hr className={`h-1px border-secondary-color border-spacing-1 my-3`}></hr>
+            <ul className='flex justify-center md:justify-start items-center gap-1 text-[#B6B3AB]'>
                 <li className='p-2'> <NetworksIcon icon={FaLinkedin} href={'https://www.linkedin.com/in/marcos-pirela-dev/'} /></li>
                 <li className='p-2'> <NetworksIcon icon={FaGithub} href={'https://github.com/macnemoto'} /></li>
                 <li className='p-2'> <NetworksIcon icon={MdOutgoingMail} href={'mailto:Marcos%20Pirela%20<marcospirela215@gmail.com>?subject=Contacto desde el Portfolio'} size='text-3xl' /></li>
