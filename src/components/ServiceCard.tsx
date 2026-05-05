@@ -9,7 +9,7 @@ interface ServiceCardProps {
 
 function ServiceCard({title, description, icon, size = "h-16 w-16"}: ServiceCardProps) {
     return (
-        <div className="bg-secondary-color p-5 flex flex-col justify-center items-center text-center rounded-lg">
+        <div className="bg-[#2A2A2B] p-5 flex flex-col justify-center items-center text-center rounded-lg border-[1px] border-[#FFFFFF0D]">
             <div className="mb-5">
                 <img className={size} src={icon} alt="Web development icon" />
             </div>
