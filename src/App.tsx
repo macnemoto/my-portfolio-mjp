@@ -11,15 +11,14 @@ function App() {
 
   return (
     <>
-    {/* flex flex-col mx-auto max-w-7xl */}
       <section className='flex flex-col mx-auto max-w-7xl'>
-        <div className='grid grid-cols-1 lg:grid-cols-[320px_1fr] lg:gap-8 lg:mx-auto'>
-          <div className=''>
+        <div className='grid grid-cols-1 lg:grid-cols-3 lg:gap-8 lg:mx-auto'>
+          <div>
             <div className='lg:sticky lg:top-0'>
-            <ProfileCard />
+              <ProfileCard />
+            </div>
           </div>
-          </div>
-          <div className='lg:max-w-2xl'>
+          <div className='lg:col-span-2'>
             <AboutCard />
             <ResumeCard />
             <PortfolioCard />
