@@ -11,15 +11,14 @@ function App() {
 
   return (
     <>
-    {/* flex flex-col mx-auto max-w-7xl */}
-      <section className='flex flex-col mx-auto max-w-7xl'>
-        <div className='grid grid-cols-1 lg:grid-cols-[320px_1fr] lg:gap-8 lg:mx-auto'>
-          <div className=''>
+      <section className='flex flex-col mx-auto max-w-7xl bg-orange-100'>
+        <div className='grid grid-cols-1 lg:grid-cols-3 lg:gap-8 lg:mx-auto bg-red-500'>
+          <div className='bg-blue-600 lg:col-span-1'>
             <div className='lg:sticky lg:top-0'>
-            <ProfileCard />
+              <ProfileCard />
+            </div>
           </div>
-          </div>
-          <div className='lg:max-w-2xl'>
+          <div className='lg:col-span-2 bg-green-700'>
             <AboutCard />
             <ResumeCard />
             <PortfolioCard />
