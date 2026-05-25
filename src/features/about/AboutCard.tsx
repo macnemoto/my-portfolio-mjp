@@ -9,14 +9,14 @@ import SkillsInfo from "../../components/SkillsInfo";
 function AboutCardt() {
     return (
         <div className="bg-primary-color p-4 rounded-lg mb-5 border border-zinc-800">
-            <h1 className="text-2xl font-bold">About Me</h1>
+            <h1 className="text-2xl lg:text-3xl font-bold">About Me</h1>
             <div className="bg-yellow-500 rounded-full h-1 w-20 mt-1 mb-3"></div>
-            <p className="mb-5">Ingeniero de Sistemas y Desarrollador Web Full Stack con más de 2 años de experiencia
+            <p className="mb-5 text-[#A1A1AA]">Ingeniero de Sistemas y Desarrollador Web Full Stack con más de 2 años de experiencia
                 creando aplicaciones escalables. Mi enfoque principal se centra en el ecosistema
                 JavaScript/TypeScript, especializándome en el desarrollo frontend con React y Tailwind
                 CSS, y backend con Node.js y Express.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
             <ServiceCard title={"Web development"} description={"Desarrollo de sitios web de alta calidad a nivel profesional."} icon={iconDev} />
             <ServiceCard title={"UI/UX Design"} description={"El diseño más moderno y de alta calidad, realizado a nivel profesional."} icon={iconDesign} />
             <ServiceCard title={"Backend Development"} description={"Servicios de backend de alto rendimiento diseñados para la escalabilidad y una experiencia de usuario impecable."} icon={iconBackend} />
